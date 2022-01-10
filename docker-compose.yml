@@ -13,8 +13,6 @@ services:
     volumes:
       - react_build:/forum/build
     command: yarn start
-    ports:
-      - 3000:3000
   nginx:
     image: nginx:latest
     ports:
