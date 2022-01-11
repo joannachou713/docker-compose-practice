@@ -15,6 +15,7 @@ function PostContainer() {
     const post_doms = retrieved_posts.map(x => (
       <PostItem title={x.title} preview={x.content.substring(0,5)}/>
     ))
+    console.log(postlist.length)
     if(!postlist.length) setPostlist(post_doms)
   });
 
